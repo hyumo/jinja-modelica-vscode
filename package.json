@@ -7,7 +7,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_ORG/jinja-modelica-vscode"
+    "url": "https://github.com/hyumo/jinja-modelica-vscode"
   },
   "engines": {
     "vscode": "^1.85.0"

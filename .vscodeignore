@@ -2,3 +2,4 @@
 .gitignore
 CHANGELOG.md
 SPEC.md
+samples/**
