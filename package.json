@@ -2,7 +2,7 @@
   "name": "jinja-modelica",
   "displayName": "Jinja Modelica",
   "description": "Jinja2 + Modelica syntax highlighting for .mo.jinja2 templates",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "publisher": "hyumo",
   "license": "MIT",
   "repository": {
