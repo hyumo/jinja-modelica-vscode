@@ -4,7 +4,9 @@
   "description": "Jinja2 + Modelica syntax highlighting for .mo.jinja2 templates",
   "version": "0.1.2",
   "publisher": "hyumo",
+  "pricing": "Free",
   "license": "MIT",
+  "icon": "images/jinja-mo-logo.png",
   "repository": {
     "type": "git",
     "url": "https://github.com/hyumo/jinja-modelica-vscode"
