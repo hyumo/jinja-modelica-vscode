@@ -1,5 +1,5 @@
 {
-  "name": "jinja-modelica",
+  "name": "jinja-mo",
   "displayName": "Jinja Modelica",
   "description": "Jinja2 + Modelica syntax highlighting for .mo.jinja2 templates",
   "version": "0.1.1",
