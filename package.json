@@ -1,6 +1,6 @@
 {
   "name": "jinja-mo",
-  "displayName": "Jinja Modelica",
+  "displayName": "Jinja2 Modelica",
   "description": "Jinja2 + Modelica syntax highlighting for .mo.jinja2 templates",
   "version": "0.1.2",
   "publisher": "hyumo",
