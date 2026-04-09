@@ -3,7 +3,7 @@
   "displayName": "Jinja Modelica",
   "description": "Jinja2 + Modelica syntax highlighting for .mo.jinja2 templates",
   "version": "0.1.0",
-  "publisher": "YOUR_PUBLISHER_ID",
+  "publisher": "hyumo",
   "license": "MIT",
   "repository": {
     "type": "git",
