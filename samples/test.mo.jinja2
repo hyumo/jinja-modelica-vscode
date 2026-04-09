@@ -1,0 +1,16 @@
+model {{test}} "test model for Jinja2 template engine"
+    extends Modelica.Icons.Example;
+    extends Modelica.FakeModel(p1={{p1}}, q1={{q1}}, r1={{r1}});
+    // This is a test model for testing the Jinja2 template engine.
+    parameter Real p = {{p1}} "parameter p";
+    parameter Real q = {{q1}} "parameter q";
+    parameter Real r = {{r1}} "parameter r";
+    Real x(start=1) "variable x";
+    Real y(start=1) "variable y";
+    Real z(start=1) "variable z";
+equation
+    x = p;
+    y = q;
+    z = r;
+annotation (Documentation(info="This is a test model for testing the Jinja2 template engine."));
+end {{test}};
