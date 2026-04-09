@@ -1,0 +1,58 @@
+{
+  "name": "jinja-modelica",
+  "displayName": "Jinja Modelica",
+  "description": "Jinja2 + Modelica syntax highlighting for .mo.jinja2 templates",
+  "version": "0.1.0",
+  "publisher": "YOUR_PUBLISHER_ID",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_ORG/jinja-modelica-vscode"
+  },
+  "engines": {
+    "vscode": "^1.85.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "keywords": [
+    "modelica",
+    "jinja",
+    "jinja2",
+    "template",
+    "mo"
+  ],
+  "contributes": {
+    "languages": [
+      {
+        "id": "jinja-modelica",
+        "aliases": [
+          "Jinja Modelica",
+          "jinja-mo"
+        ],
+        "extensions": [
+          ".mo.jinja2",
+          ".mo.j2",
+          ".mo.jinja"
+        ],
+        "configuration": "./language-configuration.json"
+      }
+    ],
+    "grammars": [
+      {
+        "language": "jinja-modelica",
+        "scopeName": "source.jinja.modelica",
+        "path": "./syntaxes/jinja-modelica.tmLanguage.json",
+        "embeddedLanguages": {
+          "source.modelica": "modelica"
+        }
+      }
+    ]
+  },
+  "scripts": {
+    "package": "vsce package"
+  },
+  "devDependencies": {
+    "@vscode/vsce": "*"
+  }
+}

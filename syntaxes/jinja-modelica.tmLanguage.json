@@ -1,0 +1,57 @@
+{
+  "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+  "name": "Jinja Modelica",
+  "scopeName": "source.jinja.modelica",
+  "patterns": [
+    { "include": "#jinja-comment" },
+    { "include": "#jinja-tag" },
+    { "include": "#jinja-variable" },
+    { "include": "#modelica-body" }
+  ],
+  "repository": {
+    "jinja-comment": {
+      "name": "comment.block.jinja",
+      "begin": "\\{#-?",
+      "end": "-?#\\}",
+      "beginCaptures": {
+        "0": { "name": "punctuation.definition.comment.begin.jinja" }
+      },
+      "endCaptures": {
+        "0": { "name": "punctuation.definition.comment.end.jinja" }
+      }
+    },
+    "jinja-tag": {
+      "name": "meta.tag.jinja",
+      "begin": "\\{%-?",
+      "end": "-?%\\}",
+      "beginCaptures": {
+        "0": { "name": "punctuation.definition.tag.jinja" }
+      },
+      "endCaptures": {
+        "0": { "name": "punctuation.definition.tag.jinja" }
+      },
+      "patterns": [
+        { "include": "source.python" }
+      ]
+    },
+    "jinja-variable": {
+      "name": "meta.variable.jinja",
+      "begin": "\\{\\{-?",
+      "end": "-?\\}\\}",
+      "beginCaptures": {
+        "0": { "name": "punctuation.definition.variable.jinja" }
+      },
+      "endCaptures": {
+        "0": { "name": "punctuation.definition.variable.jinja" }
+      },
+      "patterns": [
+        { "include": "source.python" }
+      ]
+    },
+    "modelica-body": {
+      "patterns": [
+        { "include": "source.modelica" }
+      ]
+    }
+  }
+}
